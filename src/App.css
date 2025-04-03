@@ -1,0 +1,167 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4fa8c7;
+}
+
+.error {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.loading {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Map container styles */
+.gm-style-iw {
+  padding: 10px;
+}
+
+.gm-style-iw h3 {
+  margin: 0 0 5px 0;
+}
+
+.gm-style-iw p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Add these new styles */
+.App > div:last-child {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.info-window {
+  padding: 10px;
+  max-width: 250px;
+}
+
+.info-window h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.info-window p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.info-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.info-actions button {
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.info-actions button:hover {
+  background-color: #45a049;
+}
