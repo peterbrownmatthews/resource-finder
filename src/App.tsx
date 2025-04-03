@@ -52,28 +52,6 @@ const resourceTypes = {
   ]
 };
 
-// Known providers of free services
-const knownProviders = [
-  'salvation army',
-  'goodwill',
-  'catholic charities',
-  'rescue mission',
-  'food bank',
-  'soup kitchen',
-  'homeless shelter',
-  'food pantry',
-  'saint vincent',
-  'st vincent',
-  'red cross',
-  'lutheran social',
-  'united way',
-  'community action',
-  'housing authority',
-  'department of social services',
-  'human services',
-  'social services'
-];
-
 function App() {
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [places, setPlaces] = useState<Place[]>([]);
